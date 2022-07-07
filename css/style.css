@@ -1,0 +1,234 @@
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: var(--black-color);
+}
+
+:root {
+  --white-color: #ffffff;
+  --black-color: #212121;
+  --first-brand-color: #2196f3;
+  --paragraph-color: #757575;
+  --brand-background-color: #f5f4fa;
+  --second-brand-color: #2f303a;
+}
+
+/* początek sekcji header*/
+.header-section {
+  background: var(--white-color);
+}
+
+header a {
+  text-decoration: none;
+}
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--black-color);
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+}
+.logo-color {
+  color: var(--first-brand-color);
+}
+.agency {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--black-color);
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+}
+.portfolio {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--black-color);
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+}
+.contact {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--black-color);
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+}
+.email-in-header {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--paragraph-color);
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+}
+.tel-number-in-header {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--paragraph-color);
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+}
+.navigation-links a:hover,
+.navigation-links a:focus:focus {
+  color: var(--first-brand-color);
+}
+.navigation-contacts a:hover,
+.navigation-contacts a:focus {
+  color: var(--first-brand-color);
+}
+/* koniec sekcji*/
+
+/*pierwsza sekcja*/
+.first-section {
+  background: var(--second-brand-color);
+  width: 1600px;
+  height: 600px;
+}
+
+.primary-header {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: var(--white-color);
+}
+.button-in-main-page {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: var(--first-brand-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+/*druga sekcja
+
+*/
+.small-headers {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.descriptions {
+  font-size: 14px;
+  color: var(--paragraph-color);
+  line-height: 1.71;
+}
+/*trzecia sekcja*/
+.secondary-header {
+  font-size: 36px;
+}
+
+/*czwarta sekcja
+
+
+*/
+.last-section {
+  background: var(--brand-background-color);
+}
+.last-header {
+  font-size: 36px;
+  line-height: 1.16;
+}
+.names {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.professions {
+  color: var(--paragraph-color);
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.team-list figure {
+  width: 270px;
+  height: 368px;
+  background: var(--white-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* sekcja footer
+
+*/
+.footer-section {
+  background: var(--second-brand-color);
+  width: 1600px;
+  height: 252px;
+}
+footer a {
+  text-decoration: none;
+}
+.logo-in-footer {
+  font-family: "Raleway";
+  color: var(--white-color);
+  font-size: 26px;
+}
+.street {
+  font-style: normal;
+  font-size: 14px;
+  color: var(--white-color);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.email-in-footer {
+  font-style: normal;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+}
+.tel-in-footer {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
+}
+.email-in-footer:hover,
+.email-in-footer:focus {
+  color: var(--first-brand-color);
+}
+.tel-in-footer:hover,
+.tel-in-footer:focus {
+  color: var(--first-brand-color);
+}
+
+/* tu się zaczyna część, która opisuje stronę "portfolio"
+
+do header i footer został wykorzystane te same style co do strony głównej
+*/
+
+/* stylizacja przycisków*/
+
+.portfolio-buttons {
+  height: 38px;
+  background: var(--brand-background-color);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.portfolio-buttons:hover,
+.portfolio-buttons:focus {
+  background: var(--first-brand-color);
+  color: var(--white-color);
+}
+
+.first-list figure,
+.second-list figure,
+.third-list figure {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eeeeee;
+}
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+.role-in-project {
+  color: var(--paragraph-color);
+}
