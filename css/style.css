@@ -1,6 +1,12 @@
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--black-color);
+  width: 1600px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 :root {
@@ -11,7 +17,30 @@ body {
   --brand-background-color: #f5f4fa;
   --second-brand-color: #2f303a;
 }
-
+h1,
+h2,
+h4,
+h5 {
+  margin: 0px;
+  padding: 0px;
+}
+p {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* początek sekcji header*/
 .header-section {
   background: var(--white-color);
@@ -27,44 +56,43 @@ header a {
   color: var(--black-color);
   letter-spacing: 0.03em;
   line-height: 1.19;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  margin-right: 93px;
 }
 .logo-color {
   color: var(--first-brand-color);
 }
-.agency {
+.link-to-another-page {
   font-weight: 500;
   font-size: 14px;
   color: var(--black-color);
   letter-spacing: 0.02em;
   line-height: 1.14;
 }
-.portfolio {
-  font-weight: 500;
-  font-size: 14px;
-  color: var(--black-color);
-  letter-spacing: 0.02em;
-  line-height: 1.14;
-}
-.contact {
-  font-weight: 500;
-  font-size: 14px;
-  color: var(--black-color);
-  letter-spacing: 0.02em;
-  line-height: 1.14;
-}
-.email-in-header {
+.contact-link {
   font-weight: 500;
   font-size: 14px;
   color: var(--paragraph-color);
   letter-spacing: 0.02em;
   line-height: 1.14;
 }
-.tel-number-in-header {
-  font-weight: 500;
-  font-size: 14px;
-  color: var(--paragraph-color);
-  letter-spacing: 0.02em;
-  line-height: 1.14;
+nav {
+  display: flex;
+}
+header .container {
+  display: flex;
+}
+.navigation-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 50px;
+}
+.navigation-links {
+  display: flex;
+  gap: 46px;
+  align-items: center;
 }
 .navigation-links a:hover,
 .navigation-links a:focus:focus {
@@ -82,12 +110,13 @@ header a {
   width: 1600px;
   height: 600px;
 }
-
 .primary-header {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   color: var(--white-color);
+  padding: 200px 452px 30px 452px;
+  text-align: center;
 }
 .button-in-main-page {
   width: 200px;
@@ -97,35 +126,69 @@ header a {
   background-color: var(--first-brand-color);
   color: var(--white-color);
   cursor: pointer;
+  margin-left: 700px;
+
+  border: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 /*druga sekcja
 
 */
+.descriptions-section .container ul {
+  display: flex;
+  gap: 30px;
+}
+
+.descriptions-section {
+  padding-top: 94px;
+}
 .small-headers {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  margin-bottom: 10px;
 }
 .descriptions {
   font-size: 14px;
+  font-weight: 400;
   color: var(--paragraph-color);
   line-height: 1.71;
+  width: 270px;
+  letter-spacing: 0.03em;
 }
 /*trzecia sekcja*/
 .secondary-header {
   font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.what-we-do-list {
+  display: flex;
+  gap: 30px;
 }
 
 /*czwarta sekcja
 
 
 */
+
+.team-list li {
+  width: 270px;
+}
+.team-list {
+  display: flex;
+  padding: 0;
+  gap: 30px;
+}
 .last-section {
   background: var(--brand-background-color);
 }
 .last-header {
   font-size: 36px;
   line-height: 1.16;
+  margin-bottom: 50px;
+  text-align: center;
 }
 .names {
   font-weight: 500;
@@ -133,6 +196,8 @@ header a {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .professions {
   color: var(--paragraph-color);
@@ -163,6 +228,9 @@ footer a {
   font-family: "Raleway";
   color: var(--white-color);
   font-size: 26px;
+  padding-left: 215px;
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
 .street {
   font-style: normal;
@@ -170,6 +238,9 @@ footer a {
   color: var(--white-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
+  padding-left: 215px;
+  
+  
 }
 
 .email-in-footer {
@@ -178,13 +249,17 @@ footer a {
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
   line-height: 1.71;
+  padding-left: 215px;
+  
 }
 .tel-in-footer {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
+  padding-left: 215px;
 }
+
 .email-in-footer:hover,
 .email-in-footer:focus {
   color: var(--first-brand-color);

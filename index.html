@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,157 +19,168 @@
   </head>
   <body>
     <header class="header-section">
-      <nav>
-        <a href="index.html"
-          ><h2 class="logo"><span class="logo-color">Web</span>Studio</h2></a
-        >
-        <ul class="navigation-links">
-          <li><a class="agency" href="link">Agencja</a></li>
-          <li><a class="portfolio" href="portfolio.html">Portfolio</a></li>
-          <li><a class="contact" href="link">Kontakt</a></li>
+      <div class="container">
+        <nav>
+          <a href="index.html"
+            ><h2 class="logo"><span class="logo-color">Web</span>Studio</h2></a
+          >
+          <ul class="navigation-links">
+            <li><a class="link-to-another-page" href="link">Agencja</a></li>
+            <li>
+              <a class="link-to-another-page" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li><a class="link-to-another-page" href="link">Kontakt</a></li>
+          </ul>
+        </nav>
+        <ul class="navigation-contacts">
+          <li>
+            <a class="contact-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="contact-link" href="tel:+48111111111">+48 111 111 111</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="navigation-contacts">
-        <li>
-          <a class="email-in-header" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="tel-number-in-header" href="tel:+48111111111"
-            >+48 111 111 111</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="first-section">
         <h1 class="primary-header">
-          EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+          EFEKTYWNE ROZWIĄZANIA
+          <br />DLA WASZEGO BIZNESU
         </h1>
         <button class="button-in-main-page" type="button">Zamów usługe</button>
       </section>
-      <section>
-        <ul>
-          <li>
-            <h4 class="small-headers">LOREM IPSUM</h4>
-            <p class="descriptions">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <h4 class="small-headers">LOREM IPSUM</h4>
-            <p class="descriptions">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <h4 class="small-headers">LOREM IPSUM</h4>
-            <p class="descriptions">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <h4 class="small-headers">LOREM IPSUM</h4>
-            <p class="descriptions">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-        </ul>
+      <section class="descriptions-section">
+        <div class="container">
+          <ul>
+            <li>
+              <h4 class="small-headers">LOREM IPSUM</h4>
+              <p class="descriptions">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <h4 class="small-headers">LOREM IPSUM</h4>
+              <p class="descriptions">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <h4 class="small-headers">LOREM IPSUM</h4>
+              <p class="descriptions">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <h4 class="small-headers">LOREM IPSUM</h4>
+              <p class="descriptions">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
+      <section class="section">
         <h2 class="secondary-header">Czym się zajmujemy</h2>
-        <ul>
-          <li>
-            <img
-              src="images/img1.jpg"
-              alt="person writing a code"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="images/img2.jpg"
-              alt="person holding a phone and doing somethnig in laptop"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="images/img3.jpg"
-              alt="person picking color"
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="what-we-do-list">
+            <li>
+              <img
+                src="images/img1.jpg"
+                alt="person writing a code"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                src="images/img2.jpg"
+                alt="person holding a phone and doing somethnig in laptop"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                src="images/img3.jpg"
+                alt="person picking color"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="last-section">
+      <section class="last-section section">
         <h2 class="last-header">Nasz zespół</h2>
-        <ul class="team-list">
-          <li>
-            <figure>
-              <img
-                src="images/img4.jpg"
-                alt="picture of produckt designer"
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                <h4 class="names">John Doe</h4>
-                <p class="professions">Product Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/img5.jpg"
-                alt="picture of frontend developer"
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                <h4 class="names">John Doe</h4>
-                <p class="professions">Frontend Developer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/img6.jpg"
-                alt="picture of marketing manager"
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                <h4 class="names">John Doe</h4>
-                <p class="professions">Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="images-subsections">
-              <img
-                src="images/img7.jpg"
-                alt="picture of UI desinger"
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                <h4 class="names">John Doe</h4>
-                <p class="professions">UI designer</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="team-list">
+            <li>
+              <figure>
+                <img
+                  src="images/img4.jpg"
+                  alt="picture of produckt designer"
+                  width="270"
+                  height="260"
+                />
+                <figcaption>
+                  <h4 class="names">John Doe</h4>
+                  <p class="professions">Product Designer</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/img5.jpg"
+                  alt="picture of frontend developer"
+                  width="270"
+                  height="260"
+                />
+                <figcaption>
+                  <h4 class="names">John Doe</h4>
+                  <p class="professions">Frontend Developer</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/img6.jpg"
+                  alt="picture of marketing manager"
+                  width="270"
+                  height="260"
+                />
+                <figcaption>
+                  <h4 class="names">John Doe</h4>
+                  <p class="professions">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="images-subsections">
+                <img
+                  src="images/img7.jpg"
+                  alt="picture of UI desinger"
+                  width="270"
+                  height="260"
+                />
+                <figcaption>
+                  <h4 class="names">John Doe</h4>
+                  <p class="professions">UI designer</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer-section">
