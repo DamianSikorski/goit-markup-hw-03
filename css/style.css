@@ -17,6 +17,13 @@ body {
   --brand-background-color: #f5f4fa;
   --second-brand-color: #2f303a;
 }
+img {
+  display: block;
+}
+figure {
+  margin: 0px;
+}
+
 h1,
 h2,
 h4,
@@ -213,6 +220,7 @@ header .container {
 /* sekcja footer
 
 */
+
 .footer-section {
   background: var(--second-brand-color);
   width: 1600px;
@@ -225,7 +233,6 @@ footer a {
   font-family: "Raleway";
   color: var(--white-color);
   font-size: 26px;
-  padding-left: 215px;
   padding-top: 60px;
   margin-bottom: 20px;
 }
@@ -235,7 +242,6 @@ footer a {
   color: var(--white-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
-  padding-left: 215px;
 }
 
 .email-in-footer {
@@ -244,14 +250,12 @@ footer a {
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
   line-height: 1.71;
-  padding-left: 215px;
 }
 .tel-in-footer {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
-  padding-left: 215px;
 }
 
 .email-in-footer:hover,
@@ -268,7 +272,26 @@ footer a {
 do header i footer został wykorzystane te same style co do strony głównej
 */
 
+.section-spacing {
+  margin-bottom: 30px;
+}
+.last-section-spacing {
+  margin-bottom: 94px;
+}
+
+.border-in-header {
+  border-bottom: 1px solid #ececec;
+}
+
 /* stylizacja przycisków*/
+
+.arrangement-of-buttons {
+  display: flex;
+  margin-left: 510px;
+  gap: 8px;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
 
 .portfolio-buttons {
   height: 38px;
@@ -279,6 +302,9 @@ do header i footer został wykorzystane te same style co do strony głównej
   line-height: 1.71;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
 }
 
 .portfolio-buttons:hover,
@@ -286,18 +312,37 @@ do header i footer został wykorzystane te same style co do strony głównej
   background: var(--first-brand-color);
   color: var(--white-color);
 }
+.first-list,
+.second-list,
+.third-list {
+  display: flex;
+  gap: 30px;
+}
 
 .first-list figure,
 .second-list figure,
 .third-list figure {
   width: 370px;
   height: 404px;
+}
+
+.first-list figure figcaption,
+.second-list figure figcaption,
+.third-list figure figcaption {
   border: 1px solid #eeeeee;
 }
+
 .project-name {
   font-weight: 700;
   font-size: 18px;
+  line-height: 2;
+  margin-left: 24px;
+  margin-top: 20px;
 }
 .role-in-project {
   color: var(--paragraph-color);
+  margin-top: 8px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+  line-height: 1.87;
 }
