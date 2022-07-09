@@ -64,8 +64,8 @@ header a {
   color: var(--black-color);
   letter-spacing: 0.03em;
   line-height: 1.19;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   margin-right: 93px;
 }
 .logo-color {
@@ -212,7 +212,6 @@ header .container {
 }
 .team-list figure {
   width: 270px;
-
   background: var(--white-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -281,8 +280,8 @@ do header i footer został wykorzystane te same style co do strony głównej
 
 /* stylizacja przycisków*/
 .buttons-section {
-  margin-top: 94px;
-  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .arrangement-of-buttons {
@@ -314,14 +313,14 @@ do header i footer został wykorzystane te same style co do strony głównej
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  margin-left: 24px;
-  margin-top: 20px;
+  padding-left: 24px;
+  padding-top: 20px;
 }
 .role-in-project {
   color: var(--paragraph-color);
   margin-top: 4px;
-  margin-left: 24px;
-  margin-bottom: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
   line-height: 1.87;
 }
 .list-of-images {
@@ -334,5 +333,5 @@ do header i footer został wykorzystane te same style co do strony głównej
   border: 1px solid #eeeeee;
 }
 .main-section {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
