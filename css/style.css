@@ -280,13 +280,15 @@ do header i footer został wykorzystane te same style co do strony głównej
 }
 
 /* stylizacja przycisków*/
+.buttons-section {
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
 
 .arrangement-of-buttons {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-top: 94px;
-  margin-bottom: 50px;
 }
 
 .portfolio-buttons {
@@ -331,6 +333,6 @@ do header i footer został wykorzystane te same style co do strony głównej
 .list-of-images li figure figcaption {
   border: 1px solid #eeeeee;
 }
-.list-of-images:last-child {
+.main-section {
   margin-bottom: 94px;
 }
