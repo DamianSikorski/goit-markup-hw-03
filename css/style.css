@@ -117,14 +117,15 @@ header .container {
   background: var(--second-brand-color);
   width: 1600px;
   height: 600px;
+  text-align: center;
 }
 .primary-header {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   color: var(--white-color);
-  padding: 200px 452px 30px 452px;
-  text-align: center;
+  padding-top: 200px;
+  margin-bottom: 30px;
 }
 .button-in-main-page {
   width: 200px;
@@ -134,7 +135,6 @@ header .container {
   background-color: var(--first-brand-color);
   color: var(--white-color);
   cursor: pointer;
-  margin-left: 700px;
 
   border: 0px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -200,7 +200,7 @@ header .container {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-top: 30px;
+  padding-top: 30px;
   margin-bottom: 10px;
 }
 .professions {
@@ -208,10 +208,11 @@ header .container {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+  padding-bottom: 30px;
 }
 .team-list figure {
   width: 270px;
-  height: 368px;
+
   background: var(--white-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -287,7 +288,6 @@ do header i footer został wykorzystane te same style co do strony głównej
 }
 
 .portfolio-buttons {
-  height: 38px;
   background: var(--brand-background-color);
   font-family: "Roboto";
   font-weight: 500;
