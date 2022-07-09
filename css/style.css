@@ -272,13 +272,6 @@ footer a {
 do header i footer został wykorzystane te same style co do strony głównej
 */
 
-.section-spacing {
-  margin-bottom: 30px;
-}
-.last-section-spacing {
-  margin-bottom: 94px;
-}
-
 .border-in-header {
   border-bottom: 1px solid #ececec;
 }
@@ -312,24 +305,6 @@ do header i footer został wykorzystane te same style co do strony głównej
   background: var(--first-brand-color);
   color: var(--white-color);
 }
-.first-list,
-.second-list,
-.third-list {
-  display: flex;
-  gap: 30px;
-}
-
-.first-list figure,
-.second-list figure,
-.third-list figure {
-  width: 370px;
-}
-
-.first-list figure figcaption,
-.second-list figure figcaption,
-.third-list figure figcaption {
-  border: 1px solid #eeeeee;
-}
 
 .project-name {
   font-weight: 700;
@@ -344,4 +319,16 @@ do header i footer został wykorzystane te same style co do strony głównej
   margin-left: 24px;
   margin-bottom: 20px;
   line-height: 1.87;
+}
+.list-of-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  column-gap: 30px;
+}
+.list-of-images li figure figcaption {
+  border: 1px solid #eeeeee;
+}
+.list-of-images:last-child {
+  margin-bottom: 94px;
 }
