@@ -251,6 +251,8 @@ footer a {
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
   line-height: 1.71;
+  margin-bottom: 9px;
+  margin-top: 9px;
 }
 .tel-in-footer {
   font-style: normal;
