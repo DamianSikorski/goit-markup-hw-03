@@ -7,6 +7,8 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 :root {
@@ -20,9 +22,6 @@ body {
 img {
   display: block;
 }
-figure {
-  margin: 0px;
-}
 
 h1,
 h2,
@@ -35,8 +34,7 @@ p {
   margin: 0px;
   padding: 0px;
 }
-ul,
-li {
+ul {
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -44,6 +42,8 @@ li {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .section {
   padding-top: 94px;
@@ -287,7 +287,7 @@ do header i footer został wykorzystane te same style co do strony głównej
 
 .arrangement-of-buttons {
   display: flex;
-  margin-left: 510px;
+  justify-content: center;
   gap: 8px;
   margin-top: 94px;
   margin-bottom: 50px;
@@ -323,7 +323,6 @@ do header i footer został wykorzystane te same style co do strony głównej
 .second-list figure,
 .third-list figure {
   width: 370px;
-  height: 404px;
 }
 
 .first-list figure figcaption,
@@ -341,7 +340,7 @@ do header i footer został wykorzystane te same style co do strony głównej
 }
 .role-in-project {
   color: var(--paragraph-color);
-  margin-top: 8px;
+  margin-top: 4px;
   margin-left: 24px;
   margin-bottom: 20px;
   line-height: 1.87;
