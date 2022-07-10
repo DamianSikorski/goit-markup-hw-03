@@ -19,6 +19,9 @@ body {
   --brand-background-color: #f5f4fa;
   --second-brand-color: #2f303a;
 }
+a {
+  text-decoration: none;
+}
 img {
   display: block;
 }
@@ -53,10 +56,6 @@ ul {
 .header-section {
   background: var(--white-color);
 }
-
-header a {
-  text-decoration: none;
-}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -71,71 +70,71 @@ header a {
 .logo-color {
   color: var(--first-brand-color);
 }
-.link-to-another-page {
+.navigation-links li a {
   font-weight: 500;
   font-size: 14px;
   color: var(--black-color);
   letter-spacing: 0.02em;
   line-height: 1.14;
 }
-.contact-link {
+.navigation-contacts li a {
   font-weight: 500;
   font-size: 14px;
   color: var(--paragraph-color);
   letter-spacing: 0.02em;
   line-height: 1.14;
 }
-nav {
-  display: flex;
-}
 header .container {
   display: flex;
 }
+nav {
+  display: flex;
+}
+.navigation-links,
 .navigation-contacts {
   display: flex;
   align-items: center;
+}
+.navigation-contacts {
   margin-left: auto;
   gap: 50px;
 }
 .navigation-links {
-  display: flex;
   gap: 46px;
-  align-items: center;
 }
 .navigation-links a:hover,
-.navigation-links a:focus:focus {
-  color: var(--first-brand-color);
-}
+.navigation-links a:focus,
 .navigation-contacts a:hover,
 .navigation-contacts a:focus {
   color: var(--first-brand-color);
 }
+
 /* koniec sekcji*/
 
 /*pierwsza sekcja*/
 .first-section {
   background: var(--second-brand-color);
-  width: 1600px;
-  height: 600px;
   text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 .primary-header {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 0.06em;
   color: var(--white-color);
-  padding-top: 200px;
   margin-bottom: 30px;
 }
 .button-in-main-page {
-  width: 200px;
-  height: 50px;
+  padding: 10px 41px 10px 42px;
   font-weight: 700;
   font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
   background-color: var(--first-brand-color);
   color: var(--white-color);
   cursor: pointer;
-
   border: 0px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -147,7 +146,6 @@ header .container {
   display: flex;
   gap: 30px;
 }
-
 .descriptions-section {
   padding-top: 94px;
 }
@@ -162,29 +160,22 @@ header .container {
   font-weight: 400;
   color: var(--paragraph-color);
   line-height: 1.71;
-  width: 270px;
   letter-spacing: 0.03em;
 }
-/*trzecia sekcja*/
+/*trzecia sekcja i czwarta*/
 .secondary-header {
   font-size: 36px;
   text-align: center;
   margin-bottom: 50px;
 }
-.what-we-do-list {
-  display: flex;
-  gap: 30px;
-}
-
-/*czwarta sekcja
-
-
-*/
-
+.what-we-do-list,
 .team-list {
   display: flex;
   gap: 30px;
 }
+
+/*czwarta sekcja*/
+
 .last-section {
   background: var(--brand-background-color);
 }
@@ -223,18 +214,14 @@ header .container {
 
 .footer-section {
   background: var(--second-brand-color);
-  width: 1600px;
-  height: 252px;
-}
-footer a {
-  text-decoration: none;
+  padding: 60px 0px;
 }
 .logo-in-footer {
   font-family: "Raleway";
   color: var(--white-color);
   font-size: 26px;
-  padding-top: 60px;
   margin-bottom: 20px;
+  line-height: 1.19;
 }
 .street {
   font-style: normal;
@@ -243,54 +230,36 @@ footer a {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
-.email-in-footer {
+.contacts-in-footer {
   font-style: normal;
-  font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  line-height: 1.71;
-  margin-bottom: 9px;
-  margin-top: 9px;
 }
-.tel-in-footer {
-  font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-.email-in-footer:hover,
-.email-in-footer:focus {
-  color: var(--first-brand-color);
-}
-.tel-in-footer:hover,
-.tel-in-footer:focus {
+.contacts-in-footer:hover,
+.contacts-in-footer:focus {
   color: var(--first-brand-color);
 }
 
 /* tu się zaczyna część, która opisuje stronę "portfolio"
-
-do header i footer został wykorzystane te same style co do strony głównej
-*/
+do header i footer został wykorzystane te same style co do strony głównej*/
 
 .border-in-header {
   border-bottom: 1px solid #ececec;
 }
-
 /* stylizacja przycisków*/
 .buttons-section {
   padding-top: 94px;
   padding-bottom: 50px;
 }
-
 .arrangement-of-buttons {
   display: flex;
   justify-content: center;
   gap: 8px;
 }
-
-.portfolio-buttons {
+.arrangement-of-buttons li button {
   background: var(--brand-background-color);
   font-family: "Roboto";
   font-weight: 500;
@@ -302,12 +271,13 @@ do header i footer został wykorzystane te same style co do strony głównej
   border: none;
   padding: 6px 22px;
 }
-
-.portfolio-buttons:hover,
-.portfolio-buttons:focus {
+.arrangement-of-buttons li button:hover,
+.arrangement-of-buttons li button:focus {
   background: var(--first-brand-color);
   color: var(--white-color);
 }
+
+/*koniec stylizacji przycisków*/
 
 .project-name {
   font-weight: 700;
@@ -327,7 +297,6 @@ do header i footer został wykorzystane te same style co do strony głównej
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  column-gap: 30px;
 }
 .list-of-images li figure figcaption {
   border: 1px solid #eeeeee;
